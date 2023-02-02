@@ -1,0 +1,42 @@
+DROP DATABASE IF EXISTS empleados; 
+CREATE DATABASE empleados CHARACTER SET utf8mb4; 
+USE empleados; 
+
+CREATE TABLE departamento ( 
+codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+nombre VARCHAR(100) NOT NULL, 
+presupuesto DOUBLE UNSIGNED NOT NULL, 
+gastos DOUBLE UNSIGNED NOT NULL
+);
+
+CREATE TABLE empleado ( 
+codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+nif VARCHAR(9) NOT NULL UNIQUE, 
+nombre VARCHAR(100) NOT NULL, 
+apellido1 VARCHAR(100) NOT NULL, 
+apellido2 VARCHAR(100), 
+salario FLOAT (6,2),
+codigo_departamento INT UNSIGNED, 
+FOREIGN KEY (codigo_departamento) REFERENCES departamento(codigo) 
+);
+
+INSERT INTO departamento VALUES(1, 'Desarrollo', 120000, 6000); 
+INSERT INTO departamento VALUES(2, 'Sistemas', 150000, 21000); 
+INSERT INTO departamento VALUES(3, 'Recursos Humanos', 280000, 25000); 
+INSERT INTO departamento VALUES(4, 'Contabilidad', 110000, 3000); 
+INSERT INTO departamento VALUES(5, 'I+D', 375000, 380000); 
+INSERT INTO departamento VALUES(6, 'Proyectos', 0, 0);
+INSERT INTO departamento VALUES(7, 'Publicidad', 0, 1000);
+INSERT INTO empleado VALUES(1, '12344567F', 'Lucas', 'López', 'Gómez', 1000, 1); 
+INSERT INTO empleado VALUES(2, '67676777D', 'Carmen', 'Jimenez', 'Amaya',1200, 2); 
+INSERT INTO empleado VALUES(3, '78788331B', 'Luis', 'García', 'Flores', 1300, 3); 
+INSERT INTO empleado VALUES(4, '91425252E', 'Raul', 'Martínez', NULL,1500, 4);
+INSERT INTO empleado VALUES(5, '18538242C', 'Gema', 'Santana', 'Salas', 2000, 5);
+INSERT INTO empleado VALUES(6, '72518181M', 'María', 'Ruíz', 'Gil', 1550, 1); 
+INSERT INTO empleado VALUES(7, '73117141X', 'Philippe', 'Chan', NULL, 1880, 2); 
+INSERT INTO empleado VALUES(8, '34215141Z', 'Amin', 'Dalil', 'Fernández', 2500, 3); 
+INSERT INTO empleado VALUES(9, '80131241D', 'Zenaida', 'Gómez', 'López',1350, 2);
+INSERT INTO empleado VALUES(10, '61142144H', 'Michael ','Yang', NULL, 1900, 5);
+INSERT INTO empleado VALUES(11, '81514421A', 'Marta','Herrera', 'Gil', 1600, 1);
+INSERT INTO empleado VALUES(12, '16154124R', 'Irene','Salas', 'Flores', 2700,6); 
+INSERT INTO empleado VALUES(13, '82865474B', 'Juan Antonio','Sáez', 'Guerrero', 1200,7); 
