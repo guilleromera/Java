@@ -1,6 +1,0 @@
-HOLA
-ESTA ES LA SEGUNDA LINEA
-AHORA VIENE EL ASTERISCO*
-Pero sigo leyendo
-*
-final
