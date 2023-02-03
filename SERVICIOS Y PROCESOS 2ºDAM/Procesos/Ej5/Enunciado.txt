@@ -1,0 +1,15 @@
+a) Crea un programa en Java que lea cadenas desde un fichero de texto de 
+entrada y las muestre por pantalla hasta recibir * en una sola línea. Si el 
+asterisco,*, viene en una línea con otro texto continua leyendo.
+b) A continuación, crea otro programa que ejecute el anterior y se envía la salida a 
+un fichero de texto de manera adicional a lo que ya tuviera el fichero de salida.
+En caso de producirse algún error debe escribirlo en un fichero de texto 
+también.
+
+a) Create a Java program that reads strings from a text file
+input and display them on the screen until receiving * on a single line. If he
+asterisk,*, comes on a line with other text keep reading.
+b) Next, create another program that executes the previous one and send the output to
+a text file in addition to what the output file already had.
+If an error occurs, it must be written to a text file
+too.

@@ -1,0 +1,10 @@
+Crea un programa Java llamado LeerNombre.java que reciba desde los argumentos de 
+main() un nombre y lo visualice en pantalla. Utiliza System.exit(1) para una finalización 
+correcta del programa y System.exit(2) para el caso que no se hayan introducido
+argumentos en main().
+
+
+Create a Java program called ReadName.java that receives from the arguments of
+main() a name and display it on the screen. Use System.exit(1) for a completion
+of the program and System.exit(2) in the case that they have not been entered
+arguments in main().
