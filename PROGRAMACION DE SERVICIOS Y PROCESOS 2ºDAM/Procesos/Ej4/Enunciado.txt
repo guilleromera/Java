@@ -1,0 +1,10 @@
+Escribe un programa Java que lea dos números pasados como argumentos desde 
+main() y visualice la suma de ese rango de números, finaliza el programa con 
+System.exit valor 0. Controlar que lo introducido sean dos números, si alguno no lo es, 
+termina el programa con System.exit() valor 1.
+
+
+Write a Java program that reads two numbers passed as arguments from
+main() and display the sum of that range of numbers, it ends the program with
+System.exit value 0. Check that what is entered are two numbers, if one is not,
+exit the program with System.exit() value 1.
